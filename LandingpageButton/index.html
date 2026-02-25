@@ -1,117 +1,55 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Herr Boomer präsentiert</title>
+    <meta charset="UTF-8">
+    <title>Test Conversion Page</title>
 
-  <!-- Google Tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17517951264"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17517951264');
-  </script>
+    <!-- Google Ads Global Site Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17517951264"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17517951264');
+    </script>
 
-  <!-- Google Ads Conversion Event -->
-  <script>
-    gtag('event', 'conversion', {
-      'send_to': 'AW-17517951264/WfswCJz7n_4bEKDymqFB',
-      'value': 1.0,
-      'currency': 'EUR'
-    });
-  </script>
+    <!-- Conversion Event -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17517951264/WfswCJz7n_4bEKDymqFB'
+      });
+    </script>
 
-  <style>
-    /* Hintergrund + Blur */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat fixed;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      backdrop-filter: blur(8px);
-    }
-
-    /* Dark Mode */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #111;
-        background-blend-mode: multiply;
-      }
-    }
-
-    /* Card */
-    .card {
-      background: rgba(255, 255, 255, 0.75);
-      padding: 60px 50px;
-      border-radius: 20px;
-      box-shadow: 0 10px 45px rgba(0,0,0,0.25);
-      text-align: center;
-      max-width: 520px;
-      backdrop-filter: blur(14px);
-      animation: fadeIn 1.2s ease;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .card {
-        background: rgba(20, 20, 20, 0.65);
-        color: #eee;
-      }
-    }
-
-    /* Titel */
-    h1 {
-      margin: 0 0 35px 0;
-      font-size: 38px;
-      font-weight: 600;
-      letter-spacing: 0.6px;
-      color: #222;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      h1 {
-        color: #fff;
-      }
-    }
-
-    /* Button */
-    .btn {
-      display: inline-block;
-      padding: 18px 36px;
-      font-size: 20px;
-      border-radius: 12px;
-      text-decoration: none;
-      background: linear-gradient(135deg, #0070f3, #0059c9);
-      color: white;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      box-shadow: 0 6px 20px rgba(0, 112, 243, 0.45);
-    }
-
-    .btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(0, 112, 243, 0.6);
-    }
-
-    /* Fade-in Animation */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(25px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+            text-align: center;
+        }
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="card">
-    <h1>Herr Boomer präsentiert</h1>
 
-    <a class="btn" href="https://herrboomer.carrd.co/" target="_blank">
-      Weiter zur Website
-    </a>
-  </div>
+<div class="box">
+    <h1>Conversion Testseite</h1>
+    <p>Wenn du diese Seite siehst, wurde der Google Ads Conversion‑Tag geladen.</p>
+</div>
+
 </body>
 </html>
